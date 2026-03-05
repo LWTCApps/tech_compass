@@ -1,0 +1,232 @@
+/* Tech Compass logo styling for navbar */
+.nav-compass-img {
+    height: 110px;
+    max-width: 320px;
+    min-width: 110px;
+    min-height: 80px;
+    object-fit: contain;
+    margin-right: 32px;
+    display: block;
+}
+/* Navigation logo image styling */
+.nav-logo-img {
+    height: 90px !important;
+    max-width: 350px !important;
+    min-width: 90px;
+    min-height: 60px;
+    object-fit: contain;
+    margin-right: 18px;
+    display: block;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+:root {
+    /* CCPS Brand Colors */
+    --ccps-blue: #00B3F0;
+    --ccps-green: #A6CE39;
+    --ccps-secondary-blue: #006998;
+    --ccps-gray-dark: #595A5C;
+    --ccps-gray: #A8AAAD;
+    --ccps-red: #DA2128;
+    --ccps-orange: #F37021;
+    /* For legacy variable compatibility */
+    --lwtc-primary: var(--ccps-blue);
+    --lwtc-secondary: var(--ccps-green);
+    --lwtc-accent: var(--ccps-orange);
+    --ccps-nav-hover: #A6CE39;
+    --ccps-nav-font: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: var(--ccps-nav-font);
+}
+    /* Enhanced Navigation Styles */
+    .navbar {
+        font-family: var(--ccps-nav-font);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .navbar-nav .nav-link {
+        color: var(--ccps-secondary-blue) !important;
+        font-size: 1.1rem;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+        background: rgba(0,105,152,0.12); /* darker blue background */
+        color: var(--ccps-secondary-blue) !important;
+        border: 2px solid var(--ccps-secondary-blue);
+        box-shadow: 0 2px 8px rgba(0,105,152,0.12);
+        text-decoration: none;
+        border-radius: 0.5rem;
+    }
+
+.hero-section {
+    background: linear-gradient(135deg, var(--ccps-blue) 0%, var(--ccps-secondary-blue) 100%);
+    padding: 3rem 0;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.question-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.question-card .card-header {
+    background-color: white;
+    border-bottom: 3px solid var(--ccps-blue);
+    font-weight: 600;
+    color: var(--ccps-blue);
+}
+
+.answer-option {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.answer-option:hover {
+    border-color: var(--ccps-blue);
+    background-color: rgba(0, 179, 240, 0.05);
+}
+
+.answer-option.selected {
+    border-color: var(--ccps-blue);
+    background-color: rgba(0, 179, 240, 0.1);
+}
+
+.answer-letter {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: var(--ccps-blue);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.weight-badge {
+    background-color: var(--ccps-gray-dark);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-left: 8px;
+}
+
+.result-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.top-result {
+    border: 3px solid var(--ccps-green);
+}
+
+.match-badge {
+    background-color: var(--ccps-green);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.2rem;
+    cursor: pointer;
+    background-color: var(--ccps-gray);
+    color: #666;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-dot.answered {
+    background-color: var(--ccps-blue) !important;
+    color: white !important;
+}
+
+.nav-dot.current {
+    background-color: var(--ccps-green) !important;
+    color: black !important;
+    transform: scale(1.2);
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.program-category {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.footer {
+    background-color: var(--ccps-secondary-blue);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+
+/* Testing Panel Styles */
+#testingPanel .card {
+    border: 2px solid #ffc107;
+}
+
+#testingPanel .btn-outline-primary {
+    border-width: 1px;
+}
+
+#testOutput {
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
+}
+
+#answerMapping table {
+    font-size: 11px;
+}
+
+#answerMapping td {
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #testingPanel .btn {
+        font-size: 12px;
+        padding: 6px 4px;
+    }
+    
+    #answerMapping {
+        max-height: 200px !important;
+    }
+}

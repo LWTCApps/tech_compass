@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH COMPASS - Weighted Assessment</title>
+    <!-- Google Fonts: Montserrat for nav -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="icon" href="images/tech_compass_logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <!-- Left: CCPS Logo -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand d-flex align-items-center me-4" href="/" style="padding: 0;">
+                        <img src="images/CCPS-logo-horizontal-WorkforceEducation.png" alt="CCPS Workforce Education Logo" class="img-fluid">
+                    </a>
+                </div>
+                <!-- Center: Navigation -->
+                <div class="flex-grow-1 d-flex justify-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#questionnaire">Questionnaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#results">Results</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#programs">Programs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#weightingModal" href="#">
+                                    <span class="text-nowrap"><i class="bi bi-question-circle"></i> How We Score</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right: Tech Compass Logo -->
+                <div class="d-none d-lg-flex align-items-center ms-4">
+                    <div style="display:flex; flex-direction:column; align-items:center; width: min-content;">
+                        <a href="/"><img src="images/tech_compass_logo.png" alt="Tech Compass Logo" class="nav-compass-img" style="display:block; margin-left:auto; margin-right:auto;"></a>
+                        <span style="font-family:'Montserrat',Arial,sans-serif; font-size:1.05rem; font-weight:700; color:var(--ccps-blue); margin-top:0px; letter-spacing:0.5px; display:block; text-align:center; width:100%; white-space:nowrap;">BUILD YOUR FUTURE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="questionnaire">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">TECH COMPASS</h1>
+                    <p class="lead mb-4">Weighted Assessment System • 0-100 Point Scale</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                            <span class="badge bg-light text-dark fs-6 p-3"><i class="bi bi-clock me-2"></i>20 Questions</span>
+                            <span class="badge bg-light text-dark fs-6 p-3"><i class="bi bi-award me-2"></i>30+ Programs</span>
+                            <span class="badge bg-light text-dark fs-6 p-3"><i class="bi bi-graph-up me-2"></i>Weighted Scoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+        <div id="questionnaireNote" class="alert alert-warning text-center mb-4" style="font-size:1.1rem;">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            Please answer all 20 questions. The "Get Results" button will appear only on the last question after all are answered.
+        </div>
+        <div class="row">
+            <!-- Question Navigation Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="bg-white p-4 rounded-3 shadow-sm">
+                    <h5 class="mb-3 text-center fw-bold">Question Progress</h5>
+                    <div class="text-center mb-3" id="questionNavDots"></div>
+
+                    <!-- LEGEND - CORRECTED COLORS -->
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Legend:</h6>
+                        <div class="d-flex align-items-center mb-2">
+                            <div style="width: 20px; height: 20px; background-color: var(--ccps-blue); border-radius: 50%; margin-right: 8px;"></div>
+                            <small>Answered</small>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div style="width: 20px; height: 20px; background-color: var(--ccps-green); border-radius: 50%; margin-right: 8px;"></div>
+                            <small>Current</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div style="width: 20px; height: 20px; background-color: #e9ecef; border-radius: 50%; margin-right: 8px; border: 1px solid #ced4da;"></div>
+                            <small>Unanswered</small>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 small text-muted">
+                        <i class="bi bi-info-circle"></i> Click any dot to jump to that question
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questionnaire Section -->
+            <div class="col-lg-9">
+                <div id="questionContainer">
+                    <!-- Questions will be loaded here dynamically -->
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultsSection" style="display: none;">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold mb-3"><i class="bi bi-trophy text-warning"></i> Your Program Recommendations</h2>
+                        <p class="lead mb-4">Based on weighted scoring analysis (0-100 scale):</p>
+                        
+                        <!-- Action Buttons - Top of Results -->
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                            <button class="btn btn-outline-primary" id="retakeBtn">
+                                <i class="bi bi-arrow-clockwise"></i> Retake Questionnaire
+                            </button>
+                            <button class="btn btn-primary" id="downloadBtn">
+                                <i class="bi bi-download"></i> Download Results
+                            </button>
+                            <button class="btn btn-success" onclick="exportToCSV()">
+                                <i class="bi bi-file-earmark-excel"></i> Export to Excel
+                            </button>
+                            <button class="btn btn-warning" onclick="submitToCounselor()">
+                                <i class="bi bi-send"></i> Share Results
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="resultsContainer" class="row">
+                        <!-- Results will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+
+    <!-- Programs Info Section -->
+    <section id="programs" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Available Programs</h2>
+            <div class="row" id="programsContainer">
+                <!-- Programs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Weighting Methodology -->
+    <div class="bg-light py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 bg-white">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-3 text-center"><i class="bi bi-journal-code"></i> How We Determine Your Match</h5>
+
+                            <!-- Weight Scale Explanation -->
+                            <div class="row mb-4">
+                                <div class="col offset-md-1 col-md-2 text-center mb-3">
+                                    <div class="p-3 bg-success bg-opacity-10 rounded">
+                                        <span class="badge bg-success fs-5 mb-2">5</span>
+                                        <h6 class="fw-bold">Perfect Match</h6>
+                                        <small class="text-muted">DIRECTLY related</small>
+                                    </div>
+                                </div>
+                                <div class="col col-md-2 text-center mb-3">
+                                    <div class="p-3 bg-primary bg-opacity-10 rounded">
+                                        <span class="badge bg-primary fs-5 mb-2">4</span>
+                                        <h6 class="fw-bold">Strong Match</h6>
+                                        <small class="text-muted">HIGHLY relevant </small>
+                                    </div>
+                                </div>
+                                <div class="col col-md-2 text-center mb-3">
+                                    <div class="p-3 bg-info bg-opacity-10 rounded">
+                                        <span class="badge bg-info fs-5 mb-2">3</span>
+                                        <h6 class="fw-bold">Good Match</h6>
+                                        <small class="text-muted">GOOD alignment</small>
+                                    </div>
+                                </div>
+                                <div class="col col-md-2 text-center mb-3">
+                                    <div class="p-3 bg-warning bg-opacity-10 rounded">
+                                        <span class="badge bg-warning fs-5 mb-2">2</span>
+                                        <h6 class="fw-bold">Moderate Match</h6>
+                                        <small class="text-muted">SOME connection</small>
+                                    </div>
+                                </div>
+                                <div class="col col-md-2 text-center mb-3">
+                                    <div class="p-3 bg-secondary bg-opacity-10 rounded">
+                                        <span class="badge bg-secondary fs-5 mb-2">1</span>
+                                        <h6 class="fw-bold">Barely Match</h6>
+                                        <small class="text-muted">LITTLE connection</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="small text-muted mb-0">
+                                <i class="bi bi-info-circle"></i>
+                                Weights were assigned by LWTC program directors and advisory committees based on
+                                curriculum analysis, industry standards, and employer feedback. Each answer connects you
+                                to programs at varying strengths—5 being the strongest alignment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Lorenzo Walker Technical College</h5>
+                    <p>Career & Technical Education programs designed to prepare students for high-demand careers.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Phone: (239) 377-0900</li>
+                        <li>Email: lwtc@collierschools.com</li>
+                        <li>Location: Naples, Florida</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#questionnaire" class="text-white-50 text-decoration-none">Questionnaire</a></li>
+                        <li><a href="#results" class="text-white-50 text-decoration-none">Results</a></li>
+                        <li><a href="#programs" class="text-white-50 text-decoration-none">All Programs</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none" data-bs-toggle="modal" data-bs-target="#weightingModal">How We Score</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="text-center">
+                <p class="mb-0">©
+                    <script>document.write(new Date().getFullYear());</script> Lorenzo Walker Technical College. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="weightingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">How We Calculate Your Program Matches</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold">Our Weighting Methodology</h6>
+                    <p>The TECH COMPASS uses a weighted scoring system developed by:</p>
+                    <ul>
+                        <li><strong>Program Directors</strong> - Each program director identified the key skills, work environments, and personality traits that lead to success in their field</li>
+                        <li><strong>Advisory Committees</strong> - Local employers validated what they look for when hiring graduates</li>
+                        <li><strong>Curriculum Analysis</strong> - Course outlines were reviewed to identify core competencies</li>
+                        <li><strong>Labor Market Data</strong> - Current industry demands and future job growth projections</li>
+                    </ul>
+
+                    <h6 class="fw-bold mt-4">The 5-Point Scale</h6>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Weight</th>
+                                    <th>Meaning</th>
+                                    <th>Definition</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="badge bg-success">5</span></td>
+                                    <td><strong>Essential / Core</strong></td>
+                                    <td>This skill is taught in the first semester and used daily</td>
+                                    <td>"Fix problems" → Cybersecurity (CYB)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-primary">4</span></td>
+                                    <td><strong>Strong Match</strong></td>
+                                    <td>Emphasized throughout the program, used weekly</td>
+                                    <td>"Hands-on practice" → Welding (WELD)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-info">3</span></td>
+                                    <td><strong>Good Match</strong></td>
+                                    <td>Important but not the primary focus</td>
+                                    <td>"Accuracy" → Pharmacy (PHARM)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-warning">2</span></td>
+                                    <td><strong>Moderate Match</strong></td>
+                                    <td>Supporting skill, used occasionally</td>
+                                    <td>"Documentation" → Medical Assisting (MA)</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-secondary">1</span></td>
+                                    <td><strong>Minor Match</strong></td>
+                                    <td>Related but not a primary focus</td>
+                                    <td>"Creativity" → Automotive (COL)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h6 class="fw-bold mt-4">Your Score Calculation</h6>
+                    <div class="bg-light p-3 rounded">
+                        <p class="mb-2"><strong>Total Score = Sum of all weights from your selected answers</strong></p>
+                        <p class="mb-0 small">Maximum possible: 100 points (20 questions × 5 points). Your match percentage shows how closely you align with each program's ideal student profile.</p>
+                    </div>
+
+                    <div class="mt-4 p-3 border-start border-primary border-4 bg-primary bg-opacity-10">
+                        <p class="mb-0 fst-italic">
+                            "Our weights are reviewed and updated based on graduate employment outcomes and industry feedback. This ensures our recommendations stay current with real-world workforce demands."
+                        </p>
+                        <p class="mb-0 mt-2 fw-bold">— LWTC Career Services</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

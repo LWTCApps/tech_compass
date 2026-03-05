@@ -1,0 +1,17 @@
+{
+  "name": "tech_compass",
+  "version": "1.0.0",
+  "description": "A web-based career/tech compass quiz application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser.'"
+  },
+  "author": "Rolando Rodriguez Henriquez",
+  "license": "MIT",
+  "keywords": [
+    "quiz",
+    "career",
+    "javascript",
+    "web"
+  ]
+}
