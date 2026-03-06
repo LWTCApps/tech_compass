@@ -108,16 +108,19 @@ body {
 }
 
 .answer-letter {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    line-height: 30px;
-    text-align: center;
+    min-width: 30px;
+    min-height: 30px;
     background-color: var(--ccps-blue);
     color: white;
     border-radius: 50%;
     margin-right: 10px;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .weight-badge {
