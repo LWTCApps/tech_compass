@@ -189,58 +189,19 @@ const questions = [
         answers: [
             {
                 text: "Knowing the numbers are accurate and everything balances.",
-                weights: {
-                    // Core Targets (Admin/Financial)
-                    "ACC": 5, "MAS": 4, "PHARM": 3,
-                    // Technical / IT / Automation baseline
-                    "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    // Hands-on / Trade baseline
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    // Creative / Service baseline
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1,
-                    // Health / Medical baseline
-                    "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "ACC": 5, "MAS": 4, "PHARM": 3 }
             },
             {
                 text: "Fixing a problem no one else could figure out.",
-                weights: {
-                    // Core Targets (Tech/Systems/IT)
-                    "CYB": 5, "CSIT": 5, "ESIA": 4, "EDMS": 4, "PROG": 4, "AVIO": 4, "AIRF": 4, "AIRP": 4,
-                    // Admin / Financial baseline
-                    "ACC": 1, "MAS": 1, "PHARM": 1,
-                    // Hands-on / Trade baseline
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    // Creative / Service baseline
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1,
-                    // Health / Medical baseline
-                    "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "CSIT": 4, "ESIA": 4, "EDMS": 3 }
             },
             {
                 text: "Creating something that looks or feels better than before.",
-                weights: {
-                    // Core Targets (Craftsmanship/Creative/Trades)
-                    "COL": 5, "COS": 5, "FAC": 5, "DM": 5, "CUL": 5, "WELD": 5, "DRAFT": 5, "CONST": 5,
-                    "HEST": 4, "HVAC": 4, "MACH": 4, "MAR": 4, "MAST": 4,
-                    // Admin baseline
-                    "ACC": 1, "MAS": 1, "PHARM": 1,
-                    // Tech baseline
-                    "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    // Health / Education baseline
-                    "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1, "ECE": 2
-                }
+                weights: { "COL": 5, "COS": 4, "FAC": 4, "DM": 5, "WELD": 4, "PROG": 4, "CUL": 5, "DRAFT": 4 }
             },
             {
                 text: "Helping a person feel safer, healthier, or more confident.",
-                weights: {
-                    // Core Targets (Medical/Service/Care)
-                    "MA": 5, "NA": 5, "PCT": 5, "PN": 5, "RN": 5, "DENT": 5, "SURG": 5, "PHLEB": 5, "VET": 5, "ECE": 4,
-                    // Baseline configurations for non-targeted divisions
-                    "ACC": 1, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, 
-                    "CONST": 1, "DRAFT": 1, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "PN": 5, "RN": 5, "DENT": 4, "VET": 4, "PHLEB": 4 }
             }
         ]
     },
@@ -254,39 +215,19 @@ const questions = [
         answers: [
             {
                 text: "Step-by-step procedures with clear rules.",
-                weights: {
-                    "ACC": 5, "SURG": 5, "PHARM": 5, "MAS": 4, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 2, "FAC": 2, "DM": 1, "CUL": 2, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 5 }
             },
             {
                 text: "Troubleshooting a system until it works.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "PROG": 5, "AIRF": 5, "AIRP": 5, "CSIT": 4, "ESIA": 4, "EDMS": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "CSIT": 4, "AVIO": 5, "ESIA": 4, "PROG": 5, "AIRF": 5, "AIRP": 5, "EDMS": 4 }
             },
             {
                 text: "Hands-on practice with immediate feedback.",
-                weights: {
-                    "COL": 5, "HEST": 5, "MAST": 5, "HVAC": 4, "MAR": 4, "WELD": 4, "MACH": 4, "CONST": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 3, "AVIO": 2, 
-                    "AIRF": 3, "AIRP": 3, "DRAFT": 2, "COS": 3, "FAC": 3, "DM": 2, "CUL": 3, "ECE": 2, "MA": 3, 
-                    "NA": 3, "PCT": 3, "PN": 2, "RN": 2, "DENT": 3, "SURG": 3, "PHLEB": 3, "VET": 3
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MAR": 4, "WELD": 4, "MACH": 4, "MAST": 5 }
             },
             {
                 text: "Watching a demonstration, then trying it yourself.",
-                weights: {
-                    "COS": 5, "FAC": 5, "MA": 4, "DENT": 4, "ECE": 4, "CUL": 3,
-                    "ACC": 1, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, "WELD": 2, 
-                    "CONST": 2, "DRAFT": 2, "DM": 2, "NA": 3, "PCT": 3, "PN": 3, "RN": 3, "SURG": 3, "PHLEB": 3, "VET": 3
-                }
+                weights: { "COS": 4, "FAC": 4, "MA": 3, "DENT": 4, "ECE": 4 }
             }
         ]
     },
@@ -300,38 +241,19 @@ const questions = [
         answers: [
             {
                 text: "Quiet, organized, detail-focused.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "DRAFT": 3, "DM": 3,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1,
-                    "COS": 1, "FAC": 2, "CUL": 1, "ECE": 1, "MA": 2, "NA": 1, "PCT": 1, "PN": 2, "RN": 2, "DENT": 2, "SURG": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Technical, problem-solving, system-oriented.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "AIRF": 5, "AIRP": 5, "CSIT": 4, "ESIA": 4, "PROG": 4, "EDMS": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 2, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 3, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "CSIT": 4, "ESIA": 4, "AIRF": 5, "AIRP": 5, "PROG": 4 }
             },
             {
                 text: "Active, hands-on, physically engaging.",
-                weights: {
-                    "COL": 5, "HEST": 5, "CONST": 5, "MAST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4, "DRAFT": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 2, 
-                    "AIRF": 3, "AIRP": 3, "COS": 2, "FAC": 2, "DM": 1, "CUL": 3, "ECE": 2, "MA": 1, "NA": 2, 
-                    "PCT": 2, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4, "CONST": 5, "MAST": 5, "DRAFT": 4 }
             },
             {
                 text: "People-centered, service-oriented.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "ECE": 4, "VET": 4, "COS": 4, "CUL": 4, "PHLEB": 4, "FAC": 3, "DENT": 3, "SURG": 3,
-                    "ACC": 2, "MAS": 3, "PHARM": 3, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "ECE": 4, "VET": 4, "COS": 3, "CUL": 4, "PHLEB": 4 }
             }
         ]
     },
@@ -344,38 +266,20 @@ const questions = [
         text: "How do you feel about reading instructions, manuals, or procedures?",
         answers: [
             {
-                text: "I’m comfortable with them and use them carefully.",
-                weights: {
-                    "ACC": 5, "SURG": 5, "PHARM": 4, "PN": 4, "RN": 4, "MAS": 3,
-                    "CYB": 3, "CSIT": 3, "PROG": 3, "EDMS": 3, "ESIA": 3, "AVIO": 3, "AIRF": 3, "AIRP": 3,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 2, "FAC": 2, "DM": 2, "CUL": 2, "ECE": 2, "MA": 3, "NA": 3, "PCT": 3, "DENT": 3, "PHLEB": 3, "VET": 2
-                }
+                text: "I'm comfortable with them and use them carefully.",
+                weights: { "ACC": 5, "PHARM": 4, "PN": 4, "RN": 4, "SURG": 5 }
             },
             {
-                text: "I’ll read what I need to solve a problem.",
-                weights: {
-                    "AVIO": 5, "CYB": 4, "CSIT": 4, "ESIA": 4, "PROG": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 2, "CONST": 2, "DRAFT": 3, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 2, 
-                    "NA": 1, "PCT": 1, "PN": 2, "RN": 2, "DENT": 2, "SURG": 2, "PHLEB": 1, "VET": 2
-                }
+                text: "I'll read what I need to solve a problem.",
+                weights: { "CYB": 4, "CSIT": 4, "AVIO": 5, "ESIA": 4, "PROG": 4 }
             },
             {
                 text: "I prefer visuals or demonstrations over long reading.",
-                weights: {
-                    "COL": 4, "HEST": 4, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "DRAFT": 4, "MAR": 4, "MAST": 4, "COS": 3, "FAC": 3, "CUL": 3, "DM": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 2, "MA": 2, "NA": 2, "PCT": 2, "PN": 1, "RN": 1, "DENT": 2, "SURG": 1, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 4, "HEST": 4, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "DRAFT": 4 }
             },
             {
                 text: "I like instructions when they help me help others.",
-                weights: {
-                    "DENT": 5, "ECE": 5, "VET": 5, "MA": 4, "COS": 3, "NA": 3, "PCT": 3, "PN": 3, "RN": 3, "PHLEB": 3, "CUL": 3, "FAC": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 3, "DENT": 4, "ECE": 4, "VET": 4, "COS": 3 }
             }
         ]
     },
@@ -389,39 +293,19 @@ const questions = [
         answers: [
             {
                 text: "Check records, logs, or documentation.",
-                weights: {
-                    "ACC": 5, "MAS": 4, "PHARM": 3,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 1, "PCT": 1, "PN": 2, "RN": 2, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "ACC": 5, "MAS": 4, "PHARM": 3 }
             },
             {
                 text: "Diagnose the issue and test solutions.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "AIRF": 5, "AIRP": 5, "CSIT": 4, "ESIA": 4, "PROG": 4, "EDMS": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "CSIT": 4, "ESIA": 4, "PROG": 4, "AIRF": 5, "AIRP": 5, "EDMS": 4 }
             },
             {
                 text: "Take it apart and fix it hands-on.",
-                weights: {
-                    "COL": 5, "HEST": 5, "CONST": 5, "MAST": 5, "HVAC": 4, "MAR": 4, "WELD": 4, "MACH": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 3, "AVIO": 2, 
-                    "AIRF": 3, "AIRP": 3, "DRAFT": 2, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 2
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MAR": 4, "WELD": 4, "MACH": 4, "CONST": 5, "MAST": 5 }
             },
             {
                 text: "Focus on how the problem affects people.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "ECE": 3, "PN": 3, "RN": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, 
-                    "CONST": 1, "DRAFT": 1, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2
-                }
+                weights: { "MA": 4, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -435,37 +319,19 @@ const questions = [
         answers: [
             {
                 text: "Being trusted with accuracy and financial or procedural integrity.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 3,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 2, "RN": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Protecting systems, equipment, or data.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "ESIA": 4, "PROG": 4, "CSIT": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 1, "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "ESIA": 4, "PROG": 4 }
             },
             {
                 text: "Producing quality work others can see and use.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4, "CONST": 4, "MAST": 4, "DRAFT": 4, "DM": 4, "CUL": 4, "COS": 3, "FAC": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 2, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4 }
             },
             {
                 text: "Caring for people or animals.",
-                weights: {
-                    "MA": 5, "DENT": 5, "VET": 5, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "ECE": 4, "PHLEB": 4, "SURG": 4,
-                    "ACC": 1, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2
-                }
+                weights: { "MA": 5, "DENT": 4, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -475,42 +341,23 @@ const questions = [
     // ===========================================
     {
         id: 7,
-        text: "You’re more energized by:",
+        text: "You're more energized by:",
         answers: [
             {
                 text: "Predictable routines and clear expectations.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 3,
-                    "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 2, "RN": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "New challenges that require problem-solving.",
-                weights: {
-                    "CYB": 5, "CSIT": 4, "AVIO": 4, "EDMS": 4, "PROG": 4, "ESIA": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "CSIT": 4, "AVIO": 4, "EDMS": 4, "PROG": 4 }
             },
             {
                 text: "Physical work with visible results.",
-                weights: {
-                    "COL": 5, "HEST": 5, "CONST": 5, "HVAC": 4, "MAR": 4, "WELD": 4, "MACH": 4, "MAST": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DRAFT": 2, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MAR": 4, "WELD": 4 }
             },
             {
                 text: "Interacting with clients, patients, or customers.",
-                weights: {
-                    "CUL": 5, "COS": 4, "FAC": 4, "MA": 4, "ECE": 4, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "DENT": 4, "PHLEB": 4, "VET": 3,
-                    "ACC": 2, "MAS": 3, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "COS": 4, "FAC": 4, "MA": 4, "ECE": 4, "CUL": 5 }
             }
         ]
     },
@@ -524,38 +371,19 @@ const questions = [
         answers: [
             {
                 text: "I like work where mistakes are rare and precision matters.",
-                weights: {
-                    "ACC": 5, "SURG": 5, "PHARM": 4, "MAS": 4, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "SURG": 5 }
             },
             {
                 text: "I like work where I get to figure things out.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "PROG": 5, "CSIT": 4, "ESIA": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "CSIT": 4, "ESIA": 4, "PROG": 5, "EDMS": 4 }
             },
             {
                 text: "I like work where I can see progress quickly.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4, "CONST": 4, "MAST": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DRAFT": 2, "COS": 2, "FAC": 2, "DM": 1, "CUL": 2, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "MAR": 4 }
             },
             {
                 text: "I like work where I feel helpful and needed.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "PN": 4, "RN": 4, "ECE": 4, "DENT": 4, "PHLEB": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 3, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -568,38 +396,20 @@ const questions = [
         text: "How do you feel about learning technical terminology?",
         answers: [
             {
-                text: "I don’t mind learning specialized vocabulary.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "PN": 4, "RN": 4, "MAS": 4, "SURG": 4,
-                    "CYB": 3, "CSIT": 3, "PROG": 3, "EDMS": 3, "ESIA": 3, "AVIO": 3, "AIRF": 3, "AIRP": 3,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 3, "NA": 3, "PCT": 3, "DENT": 3, "PHLEB": 3, "VET": 2
-                }
+                text: "I don't mind learning specialized vocabulary.",
+                weights: { "ACC": 4, "PHARM": 4, "PN": 4, "RN": 4 }
             },
             {
                 text: "I learn terms best when I use them to solve problems.",
-                weights: {
-                    "AVIO": 5, "CYB": 4, "CSIT": 4, "PROG": 4, "ESIA": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "AVIO": 5, "CSIT": 4, "PROG": 4 }
             },
             {
                 text: "I prefer learning terms while doing the work.",
-                weights: {
-                    "COL": 4, "HEST": 4, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MAST": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DRAFT": 2, "DM": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 1, "RN": 1, "DENT": 2, "SURG": 1, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 4, "HEST": 4, "HVAC": 4, "MACH": 4 }
             },
             {
                 text: "I learn best when terms connect to real people or outcomes.",
-                weights: {
-                    "MA": 5, "DENT": 4, "ECE": 4, "VET": 4, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "PHLEB": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 4, "DENT": 4, "ECE": 4, "VET": 4 }
             }
         ]
     },
@@ -613,37 +423,19 @@ const questions = [
         answers: [
             {
                 text: "Confirmation that everything was done correctly.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 2, "RN": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Knowing I solved a complex issue.",
-                weights: {
-                    "AVIO": 5, "PROG": 5, "CYB": 4, "CSIT": 4, "ESIA": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "AVIO": 5, "CSIT": 4, "PROG": 5 }
             },
             {
                 text: "Seeing improvement in skill or technique.",
-                weights: {
-                    "COL": 5, "DRAFT": 5, "COS": 4, "FAC": 4, "MACH": 4, "WELD": 4, "CUL": 4, "DM": 4, "CONST": 4, "HEST": 3, "HVAC": 3, "MAR": 3, "MAST": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 2, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "COS": 4, "FAC": 4, "MACH": 4, "WELD": 4, "CUL": 4, "DRAFT": 5, "DM": 4 }
             },
             {
                 text: "Positive reactions from people I helped.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "PN": 4, "RN": 4, "ECE": 4, "DENT": 4, "PHLEB": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -657,37 +449,19 @@ const questions = [
         answers: [
             {
                 text: "Reviewing documents for accuracy.",
-                weights: {
-                    "ACC": 5, "MAS": 4, "PHARM": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 1, "PCT": 1, "PN": 2, "RN": 2, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "ACC": 5, "MAS": 4, "PHARM": 4 }
             },
             {
                 text: "Diagnosing a system fault.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "ESIA": 4, "EDMS": 4, "CSIT": 4, "PROG": 3, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "ESIA": 4, "EDMS": 4, "PROG": 3 }
             },
             {
                 text: "Building, repairing, or creating something.",
-                weights: {
-                    "COL": 5, "HEST": 5, "WELD": 5, "CONST": 5, "MAST": 5, "DRAFT": 5, "HVAC": 4, "MACH": 4, "MAR": 4, "DM": 3, "CUL": 3, "COS": 3, "FAC": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 1, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 5, "MACH": 4, "CONST": 5, "MAST": 5, "DRAFT": 5, "DM": 3 }
             },
             {
                 text: "Assisting in a clinical or service setting.",
-                weights: {
-                    "PHLEB": 5, "MA": 5, "DENT": 4, "NA": 4, "PCT": 4, "VET": 4, "PN": 4, "RN": 4, "SURG": 4, "ECE": 3, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "DENT": 4, "NA": 4, "PCT": 4, "VET": 4, "PHLEB": 5 }
             }
         ]
     },
@@ -701,37 +475,19 @@ const questions = [
         answers: [
             {
                 text: "Clear structure and expectations.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 2, "RN": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "The challenge of mastering something complex.",
-                weights: {
-                    "AVIO": 5, "PROG": 5, "CYB": 4, "ESIA": 4, "CSIT": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "AVIO": 5, "ESIA": 4, "PROG": 5 }
             },
             {
                 text: "Hands-on practice and repetition.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MAST": 4, "COS": 3, "FAC": 3, "CUL": 3, "DRAFT": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DM": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 1, "RN": 1, "DENT": 2, "SURG": 1, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4 }
             },
             {
                 text: "Knowing my work makes a difference.",
-                weights: {
-                    "MA": 5, "PN": 5, "RN": 5, "NA": 4, "PCT": 4, "VET": 4, "DENT": 4, "PHLEB": 4, "SURG": 4, "ECE": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "PN": 5, "RN": 5 }
             }
         ]
     },
@@ -745,38 +501,19 @@ const questions = [
         answers: [
             {
                 text: "I appreciate clear rules and follow them closely.",
-                weights: {
-                    "PHARM": 5, "SURG": 5, "RN": 5, "ACC": 4, "MAS": 4, "PN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 3, "NA": 3, "PCT": 3, "DENT": 3, "PHLEB": 3, "VET": 2
-                }
+                weights: { "PHARM": 5, "SURG": 5, "RN": 5 }
             },
             {
                 text: "I understand their importance in complex systems.",
-                weights: {
-                    "AVIO": 5, "AIRF": 5, "AIRP": 5, "ESIA": 4, "CYB": 4, "PROG": 3, "CSIT": 3, "EDMS": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "AVIO": 5, "ESIA": 4, "CYB": 4, "AIRF": 5, "AIRP": 5, "PROG": 3 }
             },
             {
                 text: "I follow them because they protect the work and equipment.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MACH": 4, "MAST": 4, "CUL": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DRAFT": 1, "DM": 1, "COS": 2, "FAC": 2, "ECE": 1, "MA": 1, "NA": 1, 
-                    "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 4, "HEST": 4, "HVAC": 4, "WELD": 4 }
             },
             {
                 text: "I follow them because they protect people or animals.",
-                weights: {
-                    "MA": 4, "NA": 4, "VET": 4, "DENT": 4, "PHLEB": 4, "ECE": 4, "PN": 4, "RN": 4, "SURG": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 4, "NA": 4, "VET": 4, "DENT": 4, "PHLEB": 4 }
             }
         ]
     },
@@ -790,37 +527,19 @@ const questions = [
         answers: [
             {
                 text: "Stability and long-term career security.",
-                weights: {
-                    "ACC": 5, "MAS": 4, "PHARM": 4, "PN": 3, "RN": 3,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "SURG": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "MAS": 4, "PHARM": 4 }
             },
             {
                 text: "Becoming the 'go-to' problem solver.",
-                weights: {
-                    "AVIO": 5, "PROG": 5, "CYB": 4, "CSIT": 4, "EDMS": 4, "ESIA": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "AVIO": 5, "CSIT": 4, "PROG": 5 }
             },
             {
                 text: "Pride in craftsmanship and skill.",
-                weights: {
-                    "COL": 5, "WELD": 5, "CUL": 5, "DRAFT": 5, "COS": 4, "FAC": 4, "DM": 4, "CONST": 4, "HEST": 4, "HVAC": 4, "MACH": 4, "MAR": 4, "MAST": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 1, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "COS": 4, "FAC": 4, "WELD": 5, "CUL": 5, "DRAFT": 5, "DM": 4 }
             },
             {
                 text: "Making a meaningful impact on others.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "PN": 4, "RN": 4, "ECE": 4, "DENT": 4, "PHLEB": 4, "SURG": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -834,37 +553,19 @@ const questions = [
         answers: [
             {
                 text: "Keep things organized and accurate.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 1, "AVIO": 1, "AIRF": 1, "AIRP": 1,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 2, "RN": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Take on technical challenges.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "ESIA": 4, "PROG": 4, "CSIT": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "ESIA": 4, "PROG": 4 }
             },
             {
                 text: "Handle hands-on tasks.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MACH": 4, "MAST": 4, "CUL": 3, "DRAFT": 3, "COS": 3, "FAC": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DM": 1, "ECE": 1, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 4 }
             },
             {
                 text: "Support people directly.",
-                weights: {
-                    "MA": 5, "NA": 4, "ECE": 4, "VET": 4, "PN": 4, "RN": 4, "DENT": 4, "PHLEB": 4, "SURG": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "ECE": 4, "VET": 4 }
             }
         ]
     },
@@ -878,37 +579,19 @@ const questions = [
         answers: [
             {
                 text: "Working through examples step by step.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "SURG": 5, "MAS": 4, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "SURG": 5 }
             },
             {
                 text: "Solving realistic scenarios.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "PROG": 5, "CSIT": 4, "EDMS": 4, "ESIA": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "CSIT": 4, "PROG": 5 }
             },
             {
                 text: "Practicing skills repeatedly.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MAST": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DRAFT": 2, "DM": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 1, "RN": 1, "DENT": 2, "SURG": 1, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4 }
             },
             {
                 text: "Role-playing real-world situations.",
-                weights: {
-                    "MA": 5, "ECE": 4, "COS": 4, "FAC": 4, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "DENT": 4, "PHLEB": 4, "VET": 4, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 4, "ECE": 4, "COS": 4 }
             }
         ]
     },
@@ -922,38 +605,19 @@ const questions = [
         answers: [
             {
                 text: "Less important than accuracy.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 1, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4 }
             },
             {
                 text: "Useful when solving problems.",
-                weights: {
-                    "CYB": 4, "ESIA": 4, "AVIO": 4, "PROG": 4, "CSIT": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 2, "CONST": 3, "DRAFT": 3, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 2, 
-                    "NA": 1, "PCT": 1, "PN": 2, "RN": 2, "DENT": 2, "SURG": 2, "PHLEB": 1, "VET": 2
-                }
+                weights: { "CYB": 4, "ESIA": 4, "AVIO": 4, "PROG": 4 }
             },
             {
                 text: "Very important to stay engaged.",
-                weights: {
-                    "COS": 5, "FAC": 5, "DM": 5, "CUL": 5, "COL": 4, "WELD": 4, "DRAFT": 4, "CONST": 3, "ECE": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 3, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, "MA": 1, "NA": 1, 
-                    "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COS": 5, "FAC": 5, "DM": 5, "COL": 4, "WELD": 4, "CUL": 5, "DRAFT": 4 }
             },
             {
                 text: "Important when working with people.",
-                weights: {
-                    "ECE": 5, "MA": 4, "VET": 4, "COS": 4, "FAC": 4, "CUL": 4, "NA": 4, "PCT": 4, "PN": 4, "RN": 4, "DENT": 4, "PHLEB": 4, "SURG": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 4, "ECE": 5, "VET": 4 }
             }
         ]
     },
@@ -967,37 +631,19 @@ const questions = [
         answers: [
             {
                 text: "Structured and organized.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 2,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Problem-focused and technical.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "PROG": 5, "CSIT": 4, "ESIA": 4, "EDMS": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "CSIT": 4, "PROG": 5 }
             },
             {
                 text: "Active and hands-on.",
-                weights: {
-                    "COL": 5, "HEST": 5, "CONST": 5, "HVAC": 4, "WELD": 4, "MAR": 4, "MACH": 4, "MAST": 4, "CUL": 3, "COS": 3, "FAC": 3, "DRAFT": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DM": 1, "ECE": 1, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 4, "CONST": 5 }
             },
             {
                 text: "Interactive and people-centered.",
-                weights: {
-                    "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "ECE": 4, "PN": 4, "RN": 4, "DENT": 4, "PHLEB": 4, "COS": 4, "FAC": 4, "CUL": 4,
-                    "ACC": 2, "MAS": 3, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "VET": 4 }
             }
         ]
     },
@@ -1011,37 +657,19 @@ const questions = [
         answers: [
             {
                 text: "Clear advancement through roles and certifications.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 4, "PN": 4, "RN": 4,
-                    "CYB": 3, "CSIT": 3, "PROG": 3, "EDMS": 3, "ESIA": 3, "AVIO": 3, "AIRF": 3, "AIRP": 3,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 3, "NA": 3, "PCT": 3, "DENT": 3, "PHLEB": 3, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "Specializing in complex systems or technology.",
-                weights: {
-                    "CYB": 5, "AVIO": 5, "AIRF": 5, "AIRP": 5, "ESIA": 4, "PROG": 4, "CSIT": 4, "EDMS": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 5, "AVIO": 5, "ESIA": 4, "AIRF": 5, "AIRP": 5, "PROG": 4 }
             },
             {
                 text: "Expanding technical skills and techniques.",
-                weights: {
-                    "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4, "WELD": 4, "CONST": 4, "MAR": 4, "MAST": 4, "COS": 3, "FAC": 3, "CUL": 3, "DRAFT": 3,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "DM": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "PN": 1, "RN": 1, "DENT": 2, "SURG": 1, "PHLEB": 2, "VET": 2
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "MACH": 4 }
             },
             {
                 text: "Taking on more responsibility in care or service.",
-                weights: {
-                    "MA": 5, "PN": 5, "RN": 5, "SURG": 4, "NA": 4, "PCT": 4, "VET": 4, "ECE": 4, "DENT": 4, "PHLEB": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "PN": 5, "RN": 5, "SURG": 4 }
             }
         ]
     },
@@ -1055,37 +683,19 @@ const questions = [
         answers: [
             {
                 text: "Everything was done correctly.",
-                weights: {
-                    "ACC": 5, "PHARM": 4, "MAS": 4, "SURG": 5, "PN": 4, "RN": 4,
-                    "CYB": 2, "CSIT": 2, "PROG": 2, "EDMS": 2, "ESIA": 2, "AVIO": 2, "AIRF": 2, "AIRP": 2,
-                    "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1,
-                    "COS": 1, "FAC": 1, "DM": 1, "CUL": 1, "ECE": 1, "MA": 2, "NA": 2, "PCT": 2, "DENT": 2, "PHLEB": 2, "VET": 1
-                }
+                weights: { "ACC": 5, "PHARM": 4, "MAS": 4 }
             },
             {
                 text: "You solved a tough problem.",
-                weights: {
-                    "AVIO": 5, "PROG": 5, "CYB": 4, "CSIT": 4, "EDMS": 4, "ESIA": 4, "AIRF": 4, "AIRP": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "COL": 2, "HEST": 2, "HVAC": 2, "MACH": 2, "MAR": 2, "MAST": 2, 
-                    "WELD": 1, "CONST": 1, "DRAFT": 2, "COS": 1, "FAC": 1, "DM": 2, "CUL": 1, "ECE": 1, "MA": 1, 
-                    "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 2, "PHLEB": 1, "VET": 1
-                }
+                weights: { "CYB": 4, "AVIO": 5, "CSIT": 4, "PROG": 5 }
             },
             {
                 text: "You created or repaired something well.",
-                weights: {
-                    "COL": 5, "HEST": 5, "MAST": 5, "DRAFT": 5, "WELD": 5, "HVAC": 4, "CONST": 4, "MACH": 4, "MAR": 4, "CUL": 4, "COS": 4, "FAC": 4, "DM": 4,
-                    "ACC": 1, "MAS": 1, "PHARM": 1, "CYB": 1, "CSIT": 1, "PROG": 2, "EDMS": 1, "ESIA": 2, "AVIO": 1, 
-                    "AIRF": 2, "AIRP": 2, "ECE": 1, "MA": 1, "NA": 1, "PCT": 1, "PN": 1, "RN": 1, "DENT": 1, "SURG": 1, "PHLEB": 1, "VET": 1
-                }
+                weights: { "COL": 5, "HEST": 5, "HVAC": 4, "WELD": 5, "MAST": 5, "DRAFT": 5 }
             },
             {
                 text: "You helped someone meaningfully.",
-                weights: {
-                    "MA": 5, "PHLEB": 4, "NA": 4, "PCT": 4, "VET": 4, "PN": 4, "RN": 4, "ECE": 4, "DENT": 4, "SURG": 4, "COS": 3, "FAC": 3, "CUL": 3,
-                    "ACC": 2, "MAS": 2, "PHARM": 2, "CYB": 1, "CSIT": 1, "PROG": 1, "EDMS": 1, "ESIA": 1, "AVIO": 1, 
-                    "AIRF": 1, "AIRP": 1, "COL": 1, "HEST": 1, "HVAC": 1, "MACH": 1, "MAR": 1, "MAST": 1, "WELD": 1, "CONST": 1, "DRAFT": 1, "DM": 1
-                }
+                weights: { "MA": 5, "NA": 4, "PCT": 4, "VET": 4, "PHLEB": 4 }
             }
         ]
     }
