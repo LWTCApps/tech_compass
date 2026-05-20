@@ -13,32 +13,32 @@ const programs = {
         description: "Develop skills to protect computer systems and networks from cyber threats. Learn penetration testing, security analysis, risk assessment, and incident response. Prepares you for roles as a security analyst, network security specialist, or cybersecurity technician."
     },
     "COL": { 
-        name: "Automotive Collision Technology", 
+        name: "Automotive Collision Technology Technician", 
         category: "Automotive & Transportation",
         description: "Master the art of repairing and refinishing damaged vehicles. Learn body repair, painting techniques, frame straightening, and estimating. Prepares you for careers in collision repair shops, dealerships, and insurance companies."
     },
     "AIRF": { 
-        name: "Aviation Airframe", 
+        name: "Aviation Airframe Mechanics", 
         category: "Aviation",
         description: "Learn to inspect, repair, and maintain aircraft structures, systems, and components. Covers airframe construction, hydraulics, landing gear, and environmental systems. Leads to FAA Airframe certification and careers in aviation maintenance."
     },
     "AIRP": { 
-        name: "Aviation Powerplant", 
+        name: "Aviation Powerplant Mechanics", 
         category: "Aviation",
         description: "Focus on aircraft engine maintenance, repair, and overhaul. Learn about turbine and reciprocating engines, propellers, and fuel systems. Leads to FAA Powerplant certification and careers as an aircraft mechanic or engine specialist."
     },
     "AVIO": { 
-        name: "Avionics Systems", 
+        name: "Avionics Systems Technician", 
         category: "Aviation & Electronics",
         description: "Specialize in aircraft electronic systems including navigation, communication, and flight control systems. Learn to troubleshoot and repair complex avionics equipment. Prepares you for careers in aviation electronics and aerospace industries."
     },
     "CONST": { 
-        name: "Building Construction", 
+        name: "Building Construction Technologies", 
         category: "Construction",
         description: "Gain hands-on experience in residential and commercial construction. Learn framing, roofing, finishing, blueprint reading, and safety practices. Prepares you for careers as a construction worker, carpenter, or construction supervisor."
     },
     "CSIT": { 
-        name: "Computer Systems & IT", 
+        name: "Computer Systems & Information Technology", 
         category: "Information Technology",
         description: "Build expertise in computer hardware, networking, and system administration. Learn to install, configure, and troubleshoot computers and networks. Prepares you for CompTIA certifications and careers in IT support and network administration."
     },
@@ -48,7 +48,7 @@ const programs = {
         description: "Develop skills in hair cutting, styling, coloring, and chemical treatments. Learn skincare basics, makeup application, and salon management. Prepares you for state licensure and careers as a hairstylist, salon owner, or beauty consultant."
     },
     "PROG": { 
-        name: "Database App Dev & Programming", 
+        name: "Database Application Development & Programming", 
         category: "Information Technology",
         description: "Learn to design, develop, and maintain software applications and databases. Master programming languages, database management, web development, and software engineering principles. Prepares you for careers as a software developer, database administrator, or web developer."
     },
@@ -78,7 +78,7 @@ const programs = {
         description: "Master industrial electronics, PLCs, robotics, and automation systems. Learn to install, program, and maintain automated manufacturing equipment. Prepares you for careers in industrial maintenance, automation, and manufacturing technology."
     },
     "EDMS": { 
-        name: "Enterprise Desktop & Mobile Support", 
+        name: "Enterprise Desktop & Mobile Support Technology", 
         category: "Information Technology",
         description: "Develop skills in supporting desktop computers, mobile devices, and enterprise systems. Learn troubleshooting, help desk operations, and device management. Prepares you for IT support roles and industry certifications like CompTIA A+."
     },
@@ -98,7 +98,7 @@ const programs = {
         description: "Master heating, ventilation, air conditioning, and refrigeration systems. Learn installation, maintenance, troubleshooting, and EPA regulations. Prepares you for EPA certification and careers as an HVAC technician or refrigeration mechanic."
     },
     "MACH": { 
-        name: "Machining (CNC)", 
+        name: "Machining Technologies (CNC)", 
         category: "Manufacturing",
         description: "Develop precision machining skills using manual and CNC equipment. Learn programming, setup, operation, and quality control. Prepares you for careers as a CNC machinist, tool maker, or manufacturing technician."
     },
@@ -108,7 +108,7 @@ const programs = {
         description: "Learn to service and repair marine engines, electrical systems, and boat components. Develop skills in outboard, inboard, and personal watercraft maintenance. Prepares you for careers in marinas, boat dealers, and marine service centers."
     },
     "MAST": { 
-        name: "Master Automotive Service Tech", 
+        name: "Master Automotive Service Technician", 
         category: "Automotive & Transportation",
         description: "Become a comprehensive automotive technician skilled in all vehicle systems. Learn engine repair, electrical systems, brakes, suspension, and diagnostics. Prepares you for ASE certification and careers in dealerships and repair shops."
     },
@@ -123,7 +123,7 @@ const programs = {
         description: "Prepare for a versatile healthcare career combining clinical and administrative duties. Learn patient care, vital signs, medical procedures, and office management. Prepares you for certification and employment in clinics and medical offices."
     },
     "NA": { 
-        name: "Nursing Assistant", 
+        name: "Nursing Assistant (Long-Term Care)", 
         category: "Healthcare",
         description: "Learn to provide basic patient care under nursing supervision. Develop skills in personal care, vital signs, patient safety, and communication. Prepares you for state certification and careers in hospitals, nursing homes, and home health."
     },
@@ -148,7 +148,7 @@ const programs = {
         description: "Prepare for a nursing career providing direct patient care. Learn nursing fundamentals, medication administration, and patient assessment. Prepares you for NCLEX-PN licensure and careers as an LPN in various healthcare settings."
     },
     "CUL": { 
-        name: "Culinary Arts & Hospitality", 
+        name: "Proffesional Culinary Arts & Hospitality", 
         category: "Hospitality",
         description: "Develop professional cooking skills and hospitality management knowledge. Learn food preparation, kitchen operations, menu planning, and food safety. Prepares you for careers as a chef, cook, or food service manager."
     },
