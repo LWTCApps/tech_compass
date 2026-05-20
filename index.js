@@ -112,11 +112,6 @@ const programs = {
         category: "Automotive & Transportation",
         description: "Become a comprehensive automotive technician skilled in all vehicle systems. Learn engine repair, electrical systems, brakes, suspension, and diagnostics. Prepares you for ASE certification and careers in dealerships and repair shops."
     },
-    "MAS": { 
-        name: "Medical Administrative Specialist", 
-        category: "Healthcare Administration",
-        description: "Develop skills for healthcare office management. Learn medical terminology, billing, coding, electronic health records, and patient scheduling. Prepares you for careers as a medical secretary, billing specialist, or healthcare administrator."
-    },
     "MA": { 
         name: "Medical Assisting", 
         category: "Healthcare",
