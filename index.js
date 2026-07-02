@@ -1565,6 +1565,7 @@ function exportToCSV() {
 
 // Microsoft Form URL - Replace with your actual form URL
 const COUNSELOR_FORM_URL = "https://forms.office.com/Pages/ResponsePage.aspx?id=SjyUWVNiDU2KmP71AwPTS1qtThgdrC1Ls467mAaaBxBUMEozTFRTN05HRFNRUVY1UEE2WEJVMjhZVS4u";
+const COUNSELOR_FORM_URL_PRE_FILLED = "https://forms.office.com/Pages/ResponsePage.aspx?id=SjyUWVNiDU2KmP71AwPTS1qtThgdrC1Ls467mAaaBxBUMEozTFRTN05HRFNRUVY1UEE2WEJVMjhZVS4u&r57c606577c544d19b8a94fd48c68e4d2";
 
 // Copy results to clipboard for easy pasting
 function copyResultsToClipboard() {
@@ -1607,8 +1608,8 @@ function copyResultsToClipboard() {
     });
 }
 
-// Submit results to counselor via Microsoft Form
-function submitToCounselor() {
+// Submit results to counselor via Microsoft Form - // This function copies results to clipboard and opens the form for pasting - DISABLED ON 6-2-2026
+/*function submitToCounselor() {
     // Copy results to clipboard first
     const results = calculateScores();
     const topResults = results.slice(0, 5);
@@ -1648,8 +1649,36 @@ function submitToCounselor() {
             window.open(COUNSELOR_FORM_URL, '_blank');
         }, 1000);
     });
-}
+}*/
+// Submit results to counselor via Microsoft Form with pre-filled data
+function submitToCounselor() {
+    const results = calculateScores();
+    const topResults = results.slice(0, 5);
+    
+    let content = `TOP 5 MATCHES:\n`;
+    topResults.forEach((p, i) => {
+        content += `${i + 1}. ${p.name} (${p.code}) - ${p.percentage}%\n`;
+    });
 
+    // Encode the text so it can safely sit inside a URL
+    const encodedResults = encodeURIComponent(content);
+    
+    // Append the dynamic data to the pre-filled form field ID
+    // Note: Replace "r123456..." with your actual Microsoft Form field ID from the pre-filled URL step
+    const PRE_FILLED_URL = `https://forms.office.com/Pages/ResponsePage.aspx?id=SjyUWVNiDU2KmP71AwPTS1qtThgdrC1Ls467mAaaBxBUMEozTFRTN05HRFNRUVY1UEE2WEJVMjhZVS4u&r57c606577c544d19b8a94fd48c68e4d2=${encodedResults}`;
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Sending Results',
+        text: 'Opening your advisor submission form...',
+        timer: 1500,
+        showConfirmButton: false
+    });
+
+    setTimeout(() => {
+        window.open(PRE_FILLED_URL, '_blank');
+    }, 1000);
+}
 
 // ===========================================
 // MATCH REASONING ENGINE
